@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { AiComponent } from './ai/ai.component';
+import { FormComponent } from './form/form.component';
 
 //module Decorator
 @NgModule({
   declarations: [
     AppComponent,
-    AiComponent
+    AiComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
