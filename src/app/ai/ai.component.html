@@ -1,1 +1,9 @@
-<p>ai works!</p>
+<h2>Subject: {{title}} </h2>
+<h3>{{details.heading}}</h3>
+<p> {{details.desc}} </p>
+
+<div *ngIf="fields.length">
+    <ul *ngFor="let value of fields">
+        <li><a href="#">{{value}}</a></li>
+    </ul>
+</div>

@@ -1,11 +1,3 @@
 <h1 (click)="this.callme()">What is Computer Science</h1>
 <hr>
-<h2>Subject: {{title}} </h2>
-<h3>{{details.heading}}</h3>
-<p> {{details.desc}} </p>
-
-<div *ngIf="fields.length">
-    <ul *ngFor="let value of fields">
-        <li><a href="#">{{value}}</a></li>
-    </ul>
-</div>
+<app-ai></app-ai>
