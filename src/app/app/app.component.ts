@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
     console.log('component initialized succesffully')
     this.callme();
   }
-  private callme():void{
+  public callme():void{
     console.log('calling method on initialization')
   }
 
