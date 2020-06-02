@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { AiComponent } from './ai/ai.component';
 import { FormComponent } from './form/form.component';
+import { AwesomifyPipe } from './awesomify.pipe';
 
 //module Decorator
 @NgModule({
   declarations: [
     AppComponent,
     AiComponent,
-    FormComponent
+    FormComponent,
+    AwesomifyPipe
   ],
   imports: [
     BrowserModule,

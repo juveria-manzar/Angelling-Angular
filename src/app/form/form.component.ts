@@ -12,7 +12,7 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  private userData={
+  userData={
     email:"",
     pass:""
   }
