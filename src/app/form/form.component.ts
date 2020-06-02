@@ -12,4 +12,7 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  createUser(): void{
+    console.log('user created')
+  }
 }
