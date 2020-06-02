@@ -7,6 +7,7 @@ import { AppComponent } from './app/app.component';
 import { AiComponent } from './ai/ai.component';
 import { FormComponent } from './form/form.component';
 import { AwesomifyPipe } from './awesomify.pipe';
+import { AlphabeticalOrderPipe } from './alphabetical-order.pipe';
 
 //module Decorator
 @NgModule({
@@ -14,7 +15,8 @@ import { AwesomifyPipe } from './awesomify.pipe';
     AppComponent,
     AiComponent,
     FormComponent,
-    AwesomifyPipe
+    AwesomifyPipe,
+    AlphabeticalOrderPipe
   ],
   imports: [
     BrowserModule,
