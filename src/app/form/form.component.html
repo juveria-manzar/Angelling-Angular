@@ -2,11 +2,11 @@
     <h3>Make an account to gain full access!</h3>
     <div>
         <label>Email</label>
-        <input type="email">
+        <input type="text" name="email" [(ngModel)]="userData.email">
     </div>
     <div>
         <label>password</label>
-        <input type="password">
+        <input type="password" name="password" [(ngModel)]="userData.pass">
     </div>
     <input type="submit" value="Register">
 </form>

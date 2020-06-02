@@ -12,7 +12,13 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  private userData={
+    email:"",
+    pass:""
+  }
   createUser(): void{
     console.log('user created')
+    console.log(this.userData.email);
+    console.log(this.userData.pass);
   }
 }
