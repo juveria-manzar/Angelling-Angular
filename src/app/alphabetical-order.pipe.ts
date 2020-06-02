@@ -5,8 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AlphabeticalOrderPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(array: string[], order:string): any {
+    let sorted=array.sort()
+    console.log(array)
+    return sorted;
   }
 
 }
