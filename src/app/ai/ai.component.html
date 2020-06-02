@@ -3,7 +3,7 @@
 <p> {{details.desc}} </p>
 
 <div *ngIf="fields.length">
-    <ul *ngFor="let value of fields | alphabeticalOrder">
+    <ul *ngFor="let value of fields | alphabeticalOrder:'desc' ">
         <li><a href="#">{{ value }}</a></li>
     </ul>
 </div>
