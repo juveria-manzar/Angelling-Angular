@@ -30,5 +30,6 @@ export class MagnifyDirective {
   }
   @HostListener('mouseenter') onMouseEnter(){
     this.element.nativeElement.style.cursor='zoom-in'
+    this.element.nativeElement.style.userSelect='none'
   }
 }
