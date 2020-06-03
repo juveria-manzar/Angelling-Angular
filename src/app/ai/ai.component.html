@@ -1,6 +1,6 @@
 <h2>Subject: {{title}} </h2>
 <h3>{{details.heading}}</h3>
-<p> {{details.desc}} </p>
+<p appMagnify> {{details.desc}} </p>
 
 <div *ngIf="fields.length">
     <ul *ngFor="let value of fields | alphabeticalOrder:'desc' ">
