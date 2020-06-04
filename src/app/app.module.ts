@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { AwesomifyPipe } from './awesomify.pipe';
 import { AlphabeticalOrderPipe } from './alphabetical-order.pipe';
 import { MagnifyDirective } from './magnify.directive';
+import { NavigationComponent } from './navigation/navigation.component';
 
 //module Decorator
 @NgModule({
@@ -18,7 +19,8 @@ import { MagnifyDirective } from './magnify.directive';
     FormComponent,
     AwesomifyPipe,
     AlphabeticalOrderPipe,
-    MagnifyDirective
+    MagnifyDirective,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
