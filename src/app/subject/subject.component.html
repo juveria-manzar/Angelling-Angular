@@ -1,0 +1,14 @@
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 64%;">
+        <h2>Subject: {{title}} </h2>
+        <h3>{{details.heading}}</h3>
+        <p appMagnify> {{details.desc}} </p>
+
+        <div *ngIf="fields.length">
+            <ul *ngFor="let value of fields | alphabeticalOrder:'desc' ">
+                <li><a href="#">{{ value }}</a></li>
+            </ul>
+        </div>
+    </div>
+    <app-form style="width: 34%;"></app-form>
+</div>

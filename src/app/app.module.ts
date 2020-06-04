@@ -10,6 +10,12 @@ import { AwesomifyPipe } from './awesomify.pipe';
 import { AlphabeticalOrderPipe } from './alphabetical-order.pipe';
 import { MagnifyDirective } from './magnify.directive';
 import { NavigationComponent } from './navigation/navigation.component';
+import { SubjectComponent } from './subject/subject.component';
+import { HomeComponent } from './home/home.component';
+import { CryptographyComponent } from './cryptography/cryptography.component';
+import { AlgorithmsComponent } from './algorithms/algorithms.component';
+import { CompressionComponent } from './compression/compression.component';
+import { InternetComponent } from './internet/internet.component';
 
 //module Decorator
 @NgModule({
@@ -20,7 +26,13 @@ import { NavigationComponent } from './navigation/navigation.component';
     AwesomifyPipe,
     AlphabeticalOrderPipe,
     MagnifyDirective,
-    NavigationComponent
+    NavigationComponent,
+    SubjectComponent,
+    HomeComponent,
+    CryptographyComponent,
+    AlgorithmsComponent,
+    CompressionComponent,
+    InternetComponent
   ],
   imports: [
     BrowserModule,
