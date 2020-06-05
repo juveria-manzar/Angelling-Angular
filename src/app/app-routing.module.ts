@@ -10,6 +10,10 @@ import { InternetComponent } from './internet/internet.component';
 
 const routes: Routes = [
   {path:'cryptography', component:CryptographyComponent,pathMatch:'full'},
+  {path:'artificial-intelligence', component:AiComponent,pathMatch:'full'},
+  {path:'algorithms', component:AlgorithmsComponent,pathMatch:'full'},
+  {path:'compression', component:CompressionComponent,pathMatch:'full'},
+  {path:'the-internet', component:InternetComponent,pathMatch:'full'},
   {path:'', component:HomeComponent,pathMatch:'full'},
 ];
 
