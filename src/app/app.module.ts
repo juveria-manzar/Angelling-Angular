@@ -16,6 +16,7 @@ import { CryptographyComponent } from './cryptography/cryptography.component';
 import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { CompressionComponent } from './compression/compression.component';
 import { InternetComponent } from './internet/internet.component';
+import { SecretComponent } from './secret/secret.component';
 
 //module Decorator
 @NgModule({
@@ -32,7 +33,8 @@ import { InternetComponent } from './internet/internet.component';
     CryptographyComponent,
     AlgorithmsComponent,
     CompressionComponent,
-    InternetComponent
+    InternetComponent,
+    SecretComponent
   ],
   imports: [
     BrowserModule,

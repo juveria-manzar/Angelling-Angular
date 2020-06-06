@@ -11,7 +11,6 @@ export class AlgorithmsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   data={
     subject :'Algorithm',
     heading:'What is Algorithm ?',

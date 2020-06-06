@@ -8,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AiComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
-  
   data={
     subject :'Artificial Intelligence',
     heading:'What is Artificial Intelligence ?',
