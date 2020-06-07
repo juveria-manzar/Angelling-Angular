@@ -8,13 +8,18 @@ import { RequestService } from '../request.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private request:RequestService) { }
+  public mathString;
+  constructor(private request:RequestService) {
+    this.request.makeRequest('http://numbersapi.com/100/math').then((value)=>{
+      this.mathString=value;
+    })
+   }
 
   ngOnInit(): void {
   }
   public makeRequest(){
-    console.log('making request')
-    this.request.makeRequest('http://numbersapi.com/100/math')
+    this.request.makeRequest('http://numbersapi.com/100/math').then((value)=>{
+      this.mathString=value;
+    })
   }
-
 }
