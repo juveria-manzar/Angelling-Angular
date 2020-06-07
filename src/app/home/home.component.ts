@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from '../request.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private request:RequestService) { }
 
   ngOnInit(): void {
+  }
+  public makeRequest(){
+    console.log('making request')
+    this.request.makeRequest('http://numbersapi.com/100/math')
   }
 
 }
