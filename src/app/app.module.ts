@@ -17,6 +17,7 @@ import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { CompressionComponent } from './compression/compression.component';
 import { InternetComponent } from './internet/internet.component';
 import { SecretComponent } from './secret/secret.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 //module Decorator
 @NgModule({
@@ -34,7 +35,8 @@ import { SecretComponent } from './secret/secret.component';
     AlgorithmsComponent,
     CompressionComponent,
     InternetComponent,
-    SecretComponent
+    SecretComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

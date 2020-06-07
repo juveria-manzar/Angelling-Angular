@@ -8,20 +8,22 @@ export class MagnifyDirective {
   private counter=0;
 
   constructor(private element:ElementRef) { 
+
     this.defaultFontSize=window.getComputedStyle(element.nativeElement).fontSize;
+    console.log(this.defaultFontSize)
     this.defaultFontSize=this.defaultFontSize.substring(0,this.defaultFontSize.length-2);
+    console.log(this.defaultFontSize)
     this.defaultFontSize=Number(this.defaultFontSize);
 
-    this.element.nativeElement.style.cursor='zoom-in'
-    this.element.nativeElement.style.userSelect='none'
+    console.log(this.defaultFontSize)
+    
 
   }
   private magnify(element){
     let fontSizeArray=[
-      this.defaultFontSize,
-      this.defaultFontSize+3,
-      this.defaultFontSize+6,
-      this.defaultFontSize+9
+      this.defaultFontSize+13,
+      this.defaultFontSize+16,
+      this.defaultFontSize+19
     ]
 
     let newSize=fontSizeArray[++this.counter % fontSizeArray.length];
@@ -31,8 +33,8 @@ export class MagnifyDirective {
   @HostListener('click') onClick(){
     this.magnify(this.element)
   }
-  // @HostListener('mouseenter') onMouseEnter(){
-  //   this.element.nativeElement.style.cursor='zoom-in'
-  //   this.element.nativeElement.style.userSelect='none'
-  // }
+  @HostListener('mouseenter') onMouseEnter(){
+    this.element.nativeElement.style.cursor='zoom-in'
+    this.element.nativeElement.style.userSelect='none'
+  }
 }

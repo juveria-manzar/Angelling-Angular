@@ -8,6 +8,7 @@ import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { CompressionComponent } from './compression/compression.component';
 import { InternetComponent } from './internet/internet.component';
 import { SecretComponent } from './secret/secret.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path:'cryptography', component:CryptographyComponent,pathMatch:'full'},
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path:'compression', component:CompressionComponent,pathMatch:'full'},
   {path:'the-internet', component:InternetComponent,pathMatch:'full'},
   {path:'secret/:key', component:SecretComponent,pathMatch:'full'},
+  {path:'404', component:NotFoundComponent,pathMatch:'full'},
   {path:'', component:HomeComponent,pathMatch:'full'},
+  {path:'**', redirectTo:"/404"},
 ];
 
 @NgModule({
